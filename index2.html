@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+        <!--  add cdn link for React -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+        <!-- add cdn link for Reeact-DOM -->
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- add cdn for babel: this allow us to write jsx syntax and es6 on old browsers -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+
+        <!-- placeholder for react component -->
+        <div id="one"></div>
+
+        <!-- create function to hold what the react component should do -->
+        <script type="text/babel">
+            function Hello() {
+                return <h1>Hello React</h1>;
+            }
+            
+            // render react component
+            ReactDOM.render(<Hello />, document.getElementById('one'))
+        </script>
+    </body>
+</html>
