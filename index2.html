@@ -12,8 +12,9 @@
     </head>
     <body>
 
-        <!-- placeholder for react component -->
+        <!-- placeholders for react component -->
         <div id="one"></div>
+        <div id="two"></div>
 
         <!-- create function to hold what the react component should do -->
         <script type="text/babel">
@@ -23,6 +24,15 @@
             
             // render react component
             ReactDOM.render(<Hello />, document.getElementById('one'))
+        </script>
+
+        <script type="text/babel">
+            function Paragraph() {
+                return <p>Thiss is a paragraph</p>;
+            }
+            
+            // render react component
+            ReactDOM.render(<Paragraph />, document.getElementById('two'))
         </script>
     </body>
 </html>
