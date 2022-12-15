@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <p id="demo"></p>
+    <script>
+    const info = {
+        firstname: 'Qozeem',
+        lastname: 'Odeniran',
+        major: 'Information Technology',
+        age: '28',
+        cgpa: 4.0
+    }
+
+    myinfo(info);
+
+    function myinfo({firstname, lastname, major, age, cgpa}) {
+        const intro = 'Hello, my name is ' + firstname + ' ' + lastname + '. I am majoring in ' + major + ', and I am ' + age + ' years old.' + ' Currently, my CGPA is ' + cgpa; 
+
+        document.getElementById("demo").innerHTML = intro;
+    }
+    </script>
+    </body>
+</html>

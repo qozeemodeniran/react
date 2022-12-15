@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <p id="demo"></p>
+    <script type="module">
+        // import named export
+        import { fullname, major } from "./module1.js";
+        
+        // import default export
+        import intro from "./module2.js";
+        
+        document.getElementById("demo").innerHTML = info();
+    </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <p id="demo"></p>
+
+    <script>
+        function rendeApp() {
+            document.getElementById("demo").innerHTML = "Welcome to page";
+        }
+
+        function renderLogin() {
+            document.getElementById("demo").innerHTML  = "Kindly login";
+        }
+
+        let authenticated = false;
+
+        // if /else
+        if (authenticated) {
+            rendeApp();
+        } else {
+            renderLogin();
+        }
+    </script>
+    </body>
+</html>
