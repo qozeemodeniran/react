@@ -1,12 +1,30 @@
-// -------------ARRAY METHODS-----------------
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+// import React and ReactDOM
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// create an array
-const array1 = ["One", "Two", "Three", "Four"];
+// create HTML to render: using JSX(JavaScript XML syntax)
+const html1 = (
+    <h1>Students' Information</h1>
+);
+const html2 = (
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>Qozeem Odeniran</td>
+        </tr>
+        <tr>
+            <td>Jibril Odeniran</td>
+        </tr>
+    </table>
+) ;
 
-// use map() to generate a list from the array
-const list1 = array1.map((item) => <p>{item}</p>);
+// create root
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(list1);
+const header1 = ReactDOM.createRoot(document.getElementById('header1'));
+const root1 = ReactDOM.createRoot(document.getElementById('root1'));
+
+// render root
+header1.render(html1);
+root1.render(html2);
