@@ -12,5 +12,5 @@ const Todos = ({todos}) => {
         </>
     );
 } 
-// Use memoto keep the Todos component from needlessly re-rendering.
-export default memo(Todos);
+
+export default Todos;

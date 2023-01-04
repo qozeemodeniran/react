@@ -1,6 +1,7 @@
-.bigblue {
-    color: DodgerBlue;
+.goldie {
+    color: red;
+    background-color: aquamarine;
     padding: 40px;
     font-family: Sans-Serif;
     text-align: center;
-  }
+}
